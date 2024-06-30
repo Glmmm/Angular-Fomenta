@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-12">
+        <button routerLink="criar" class="btn btn-success">Criar Pessoas</button>
+    </div>
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pessoas of pessoas">
+                    <th>{{pessoas.id}}</th>
+                    <td>{{pessoas.nome}}</td>
+                    <td>{{pessoas.idade}}</td>
+                    <td>{{pessoas.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
